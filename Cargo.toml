@@ -3,4 +3,19 @@ name = "miri-test"
 version = "0.1.0"
 edition = "2024"
 
+
+[workspace.dependencies]
+# Stark Backend
+openvm-stark-backend = { git = "https://github.com/openvm-org/stark-backend.git", tag = "v1.0.0-rc.0", default-features = false }
+openvm-stark-sdk = { git = "https://github.com/openvm-org/stark-backend.git", tag = "v1.0.0-rc.0", default-features = false }
+
 [dependencies]
+openvm = {git = "https://github.com/openvm-org/openvm.git", tag = "v1.0.0-rc.0" }
+openvm-ecc-sw-macros = {git = "https://github.com/openvm-org/openvm.git", tag = "v1.0.0-rc.0" }
+openvm-algebra-moduli-macros = {git = "https://github.com/openvm-org/openvm.git", tag = "v1.0.0-rc.0" }
+openvm-algebra-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.0.0-rc.0"  }
+openvm-ecc-guest = { git = "https://github.com/openvm-org/openvm.git", tag = "v1.0.0-rc.0", features = ["p256"]  }
+
+num-bigint = { version = "0.4.6", default-features = false }
+serde = { version = "1.0.201", default-features = false, features = ["derive"] }
+hex-literal = { version = "0.4.1", default-features = false }
