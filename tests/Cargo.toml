@@ -1,4 +1,7 @@
 [workspace]
 members = [
-    "openvm_18"
+    "openvm_18",
+    "openvm_21",
+    "openvm_27",
+    "openvm_28",
 ]
