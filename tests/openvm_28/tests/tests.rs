@@ -32,7 +32,7 @@ mod tests {
 
     #[test]
     #[should_panic(expected = "Not enough limbs: len 4")]
-    pub fn test_cyclicgroup_for_p256point() {
+    pub fn test_decompose() {
         let bus = VariableRangeCheckerBus::new(0, 5);
 
         let range_checker = VariableRangeCheckerChip::new(bus);
