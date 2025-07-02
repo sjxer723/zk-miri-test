@@ -2,6 +2,7 @@
 members = [
     "openvm_18",
     "openvm_21",
+    "openvm_22",
     "openvm_25",
     "openvm_27",
     "openvm_28",
